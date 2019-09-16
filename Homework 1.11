@@ -1,0 +1,28 @@
+/*
+ * Name:Nicholas Murphy
+ * Date:Sept 11,2019
+ * Course name:Intro to Java Programming 
+ * course number:CSC-111-D01
+ * Problem number:*1.11 pg.36
+ * Short description of problem:Write a program to display the population of the "U.S. Census Bureau" with
+ * 								-one birth every 7 sec
+ * 								-one death every 13 sec
+ * 								-one new immigrent every 45 sec
+ * The problem is to find the population for each of the next five years.
+ * Email:nlmurphy0002@student.stcc.edu
+ */
+
+package main;
+
+public class Population {
+
+	public static void main(String[] args){
+	 
+		System.out.println("Population at year 0," + 312032486);
+		System.out.println("Population at year 1," + (312032486 +(((31536000/7)-(31536000/13) + (31536000)/45)) * 1 ));		
+		System.out.println("Population at year 2," + (312032486 +(((31536000/7)-(31536000/13) + (31536000)/45)) * 2 ));				
+		System.out.println("Population at year 3," + (312032486 +(((31536000/7)-(31536000/13) + (31536000)/45)) * 3 ));				
+		System.out.println("Population at year 4," + (312032486 +(((31536000/7)-(31536000/13) + (31536000)/45)) * 4 ));				
+		System.out.println("Population at year 5," + (312032486 +(((31536000/7)-(31536000/13) + (31536000)/45)) * 5 ));				
+	}
+}

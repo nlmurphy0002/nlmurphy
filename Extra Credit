@@ -1,0 +1,39 @@
+/*
+ * Name:Nicholas Murphy
+ * Date:Sept 11,2019
+ * Course name:Intro to Java Programming 
+ * course number:CSC-111-D01
+ * Problem number:*2.23 
+ * Short description of problem:(Cost of driving) Write a program that prompts the user to enter the distance to
+drive, the fuel efficiency of the car in miles per gallon, and the price per gallon,
+and displays the cost of the trip.
+ * 						-driving distance: 900.5
+ * 						-miles per gallon: 25.5
+ * 						-price per gallon:3.55
+ * 						-cost of driving is $125.36
+ * Email:nlmurphy0002@student.stcc.edu
+ */
+package main;
+
+import java.util.Scanner;
+
+	public class Costofdriving {
+	public static void main(String args[]) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter the driving distance: ");
+		double  distance = input.nextDouble();
+		
+		System.out.print("Enter miles per gallon: ");
+		double milesPerGallon = input.nextDouble();
+		
+		System.out.print("Enter price per gallon:");
+		double pricePerGallon = input.nextDouble();
+		
+		double costOfDriving = (distance/ milesPerGallon) * pricePerGallon;
+		
+		 System.out.print("The cost of driving $" + costOfDriving);
+		
+		
+		}
+	}
